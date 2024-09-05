@@ -2,7 +2,7 @@
 FROM nginx:alpine
 
 # Remove the default Nginx welcome page
-#RUN rm /usr/share/nginx/html/*
+RUN rm /usr/share/nginx/html/*
 
 # Copy the static HTML file to the Nginx HTML directory
 COPY . Project.html /usr/share/nginx/html/
