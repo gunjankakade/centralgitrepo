@@ -5,7 +5,7 @@ FROM nginx:alpine
 RUN rm /usr/share/nginx/html/*
 
 # Copy the static HTML file to the Nginx HTML directory
-COPY ./Project.html /usr/share/nginx/html/
+COPY . Project.html /usr/share/nginx/html/
 
 # Expose port 80
 EXPOSE 80
